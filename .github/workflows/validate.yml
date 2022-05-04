@@ -1,0 +1,24 @@
+name: Validation
+
+on: [push, pull_request]
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v3
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Validate JSON files
+        run: |
+          python validate.py --prettify patterns.json patterns.schema.json
+      - name: Check git workspace
+        id: changes
+        uses: UnicornGlobal/has-changes-action@v1.0.11
+      - name: Make sure all files are prettified
+        if: steps.changes.output.changed == 1
+        run: echo "JSON files not prettified. Please run validate.py on the files locally and commit."
