@@ -1,0 +1,16 @@
+{
+    "symbols": {
+        "CGraph::InitGraph": {
+            "#": "Find by certain methods",
+            "dlls": [
+                "hl"
+            ],
+            "names": {
+                "Linux": "_ZN6CGraph9InitGraphEv"
+            },
+            "patterns": {
+                "HL-8684": "56 8B F1 57 33 FF 8B 46 10 89 3E 3B C7 89 7E 04 89 7E 08 74 0C 50 E8 ?? ?? ?? ?? 83 C4 04 89 7E 10 8B F6 0C"
+            }
+        }
+    }
+}

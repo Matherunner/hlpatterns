@@ -1,0 +1,90 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id": "https://github.com/Matherunner/hlpatterns",
+    "description": "Function patterns for Half-Life, its expansions, and mods",
+    "type": "object",
+    "$defs": {
+        "patternKeys": {
+            "enum": [
+                "HL-8684",
+                "TWHL-Tower-2"
+            ]
+        },
+        "symbolKeys": {
+            "enum": [
+                "CGraph::InitGraph"
+            ]
+        },
+        "nameKeys": {
+            "enum": [
+                "Windows",
+                "macOS",
+                "Linux"
+            ]
+        },
+        "dlls": {
+            "type": "string",
+            "enum": [
+                "hl",
+                "cl",
+                "hw"
+            ]
+        },
+        "patternString": {
+            "type": "string",
+            "pattern": "^(([0-9A-F]{2}|\\?{2}) )*([0-9A-F]{2}|\\?{2})$"
+        },
+        "symbolSchema": {
+            "type": "object",
+            "properties": {
+                "names": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "type": "string"
+                    },
+                    "propertyNames": {
+                        "$ref": "#/$defs/nameKeys"
+                    }
+                },
+                "patterns": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#/$defs/patternString"
+                    },
+                    "propertyNames": {
+                        "$ref": "#/$defs/patternKeys"
+                    }
+                },
+                "dlls": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/dlls"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                },
+                "#": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "names",
+                "patterns",
+                "#",
+                "dlls"
+            ]
+        }
+    },
+    "properties": {
+        "symbols": {
+            "type": "object",
+            "additionalProperties": {
+                "$ref": "#/$defs/symbolSchema"
+            },
+            "propertyNames": {
+                "$ref": "#/$defs/symbolKeys"
+            }
+        }
+    },
+    "additionalProperties": false
+}
