@@ -6,13 +6,57 @@
     "$defs": {
         "patternKeys": {
             "enum": [
+                "BigLolly",
+                "CSCZDS",
+                "Gunman",
+                "HL-4554",
                 "HL-8684",
+                "HL-NGHL",
+                "HL-WON",
+                "OF-8684",
+                "OF-WON",
                 "TWHL-Tower-2"
             ]
         },
         "symbolKeys": {
             "enum": [
-                "CGraph::InitGraph"
+                "AngleVectors",
+                "build_number",
+                "CBaseMonster::ChangeSchedule",
+                "CBaseMonster::PBestSound",
+                "CBaseMonster::RouteNew",
+                "CGraph::InitGraph",
+                "Cmd_AddCommandWithFlags",
+                "Cmd_Argv",
+                "CSoundEnt::ActiveList",
+                "CSoundEnt::SoundPointerForIndex",
+                "Cvar_RegisterVariable",
+                "Draw_String",
+                "Host_AutoSave_f",
+                "Host_Noclip_f",
+                "HUD_DrawTransparentTriangles",
+                "HUD_Redraw",
+                "HUD_Reset",
+                "HUD_VidInit",
+                "hudGetScreenInfo",
+                "Memory_Init",
+                "PF_checkclient_I",
+                "PF_traceline_DLL",
+                "PM_Init",
+                "PM_PlayerMove",
+                "R_Clear",
+                "R_DrawSequentialPoly",
+                "ScreenTransform",
+                "tri_GL_Begin",
+                "tri_GL_Color4f",
+                "tri_GL_CullFace",
+                "tri_GL_End",
+                "tri_GL_RenderMode",
+                "tri_GL_Vertex3fv",
+                "V_FadeAlpha",
+                "VGUI2_Draw_SetTextColorAlpha",
+                "WorldGraph",
+                "WorldTransform"
             ]
         },
         "nameKeys": {
@@ -40,7 +84,8 @@
                 "names": {
                     "type": "object",
                     "additionalProperties": {
-                        "type": "string"
+                        "type": "string",
+                        "minLength": 1
                     },
                     "propertyNames": {
                         "$ref": "#/$defs/nameKeys"
