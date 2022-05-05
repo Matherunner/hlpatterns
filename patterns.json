@@ -66,12 +66,22 @@
                 "hl"
             ],
             "names": {
-                "Windows": "CGraph::InitGraph",
-                "Linux": "_ZN6CGraph9InitGraphEv"
+                "Linux": "_ZN6CGraph9InitGraphEv",
+                "Windows": "CGraph::InitGraph"
             },
             "patterns": {
                 "HL-8684": "56 8B F1 57 33 FF 8B 46 10 89 3E 3B C7 89 7E 04 89 7E 08 74 0C 50 E8 ?? ?? ?? ?? 83 C4 04 89 7E 10 8B F6 0C"
             }
+        },
+        "CL_CreateMove": {
+            "#": "",
+            "dlls": [
+                "cl"
+            ],
+            "names": {
+                "Windows": "CL_CreateMove"
+            },
+            "patterns": {}
         },
         "CSoundEnt::ActiveList": {
             "#": "",
@@ -98,6 +108,20 @@
             },
             "patterns": {
                 "HL-8684": "8B 0D ?? ?? ?? ?? 85 C9 75 03 33 C0 C3 8B 44 24 04 83 F8 3F 7E 13 68 ?? ?? ?? ?? 6A 01 FF 15 ?? ?? ?? ??"
+            }
+        },
+        "Cbuf_InsertText": {
+            "#": "",
+            "dlls": [
+                "hw"
+            ],
+            "names": {
+                "Linux": "Cbuf_InsertText"
+            },
+            "patterns": {
+                "HL-4554": "55 8B EC 53 8B 5D 08 56 8B 35 ?? ?? ?? ?? 57 53 E8 ?? ?? ?? ?? 8B 0D ?? ?? ?? ?? 03 C6 83 C4 04 3B C1 7C 12 68 ?? ?? ?? ?? E8",
+                "HL-8183": "55 8B EC 8B 45 08 6A 00 68 ?? ?? ?? ?? 50 E8 ?? ?? ?? ?? 83 C4 0C 5D C3",
+                "HL-NGHL": "53 8B 5C 24 08 56 8B 35 ?? ?? ?? ?? 57 53 E8 ?? ?? ?? ?? 8B 0D ?? ?? ?? ?? 03 C6 83 C4 04 3B C1 7C"
             }
         },
         "Cmd_AddCommandWithFlags": {
