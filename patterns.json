@@ -17,7 +17,9 @@
             "dlls": [
                 "hl"
             ],
-            "names": {},
+            "names": {
+                "Windows": "CBaseMonster::ChangeSchedule"
+            },
             "patterns": {
                 "CSCZDS": "8B 44 24 04 33 D2 89 81 74 01 00 00 89 91 78 01 00 00 89 91 70 01 00 00 89 91 7C 01 00 00 89 91 88 02 00 00",
                 "Gunman": "8B 44 24 04 53 57 8B F9 33 DB 89 87 4C 01 00 00 89 9F 50 01 00 00 89 9F 48 01 00 00 89 9F BC 00 00 00 89 9F 3C 02 00 00",
@@ -32,7 +34,9 @@
             "dlls": [
                 "hl"
             ],
-            "names": {},
+            "names": {
+                "Windows": "CBaseMonster::PBestSound"
+            },
             "patterns": {
                 "CSCZDS": "83 EC 10 53 8B D9 55 57 8B BB 3C 02 00 00 83 CD FF 83 FF FF C7 44 24 0C 00 00 00 46 75 2D",
                 "Gunman": "83 EC 10 53 8B D9 55 57 8B BB F0 01 00 00 83 CD FF 83 FF FF C7 44 24 0C 00 00 00 46 75 2D",
@@ -47,7 +51,9 @@
             "dlls": [
                 "hl"
             ],
-            "names": {},
+            "names": {
+                "Windows": "CBaseMonster::RouteNew"
+            },
             "patterns": {
                 "CSCZDS": "33 C0 89 81 ?? ?? ?? ?? 89 81 ?? ?? ?? ?? C3 90 8B 81 ?? ?? ?? ?? 83 C0 14",
                 "Gunman": "33 C0 89 81 ?? ?? ?? ?? 89 81 ?? ?? ?? ?? C3 90 8B 81 ?? ?? ?? ?? 83 C0 16",
@@ -60,6 +66,7 @@
                 "hl"
             ],
             "names": {
+                "Windows": "CGraph::InitGraph",
                 "Linux": "_ZN6CGraph9InitGraphEv"
             },
             "patterns": {
@@ -71,7 +78,9 @@
             "dlls": [
                 "hl"
             ],
-            "names": {},
+            "names": {
+                "Windows": "CSoundEnt::ActiveList"
+            },
             "patterns": {
                 "CSCZDS": "A1 ?? ?? ?? ?? 85 C0 75 04 83 C8 FF C3 8B 40 50 C3",
                 "HL-8684": "A1 ?? ?? ?? ?? 85 C0 75 04 83 C8 FF C3 8B 40 58 C3",
@@ -84,7 +93,9 @@
             "dlls": [
                 "hl"
             ],
-            "names": {},
+            "names": {
+                "Windows": "CSoundEnt::SoundPointerForIndex"
+            },
             "patterns": {
                 "HL-8684": "8B 0D ?? ?? ?? ?? 85 C9 75 03 33 C0 C3 8B 44 24 04 83 F8 3F 7E 13 68 ?? ?? ?? ?? 6A 01 FF 15 ?? ?? ?? ??"
             }
@@ -234,7 +245,9 @@
             "dlls": [
                 "hl"
             ],
-            "names": {},
+            "names": {
+                "Windows": "PM_Init"
+            },
             "patterns": {
                 "HL-8684": "55 8B EC E8 ?? ?? ?? ?? 8B 55 08 33 C0 56 8D 8A ?? ?? ?? ?? 8B B0 ?? ?? ?? ?? 83 C0 0C 89 71 FC 8B B0 ?? ?? ?? ?? 89 31",
                 "OF-8684": "8B 44 24 04 A3 ?? ?? ?? ?? E8 ?? ?? ?? ?? E8 ?? ?? ?? ?? C7 05"
