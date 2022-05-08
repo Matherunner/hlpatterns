@@ -59,7 +59,8 @@
                 "V_FadeAlpha",
                 "VGUI2_Draw_SetTextColorAlpha",
                 "WorldGraph",
-                "WorldTransform"
+                "WorldTransform",
+                "WriteDest_Parm"
             ]
         },
         "nameKeys": {

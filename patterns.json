@@ -368,6 +368,18 @@
                 "HL-8684": "55 8B EC 83 EC 08 8B 45 08 8B 4D 0C D9 05 ?? ?? ?? ?? D8 08 D9 05 ?? ?? ?? ?? D8 48"
             }
         },
+        "WriteDest_Parm": {
+            "#": "Search for \"WriteDest_Parm: not a client\"",
+            "dlls": [
+                "hw"
+            ],
+            "names": {
+                "Linux": "WriteDest_Parm"
+            },
+            "patterns": {
+                "HL-8684": "55 8B EC 56 57 8B 7D 08 83 FF 09 0F 87 89 00 00 00 FF 24 BD ?? ?? ?? ?? 5F B8 ?? ?? ?? ?? 5E 5D C3 A1 ?? ?? ?? ?? 50"
+            }
+        },
         "build_number": {
             "#": "",
             "dlls": [
