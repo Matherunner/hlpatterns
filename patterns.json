@@ -314,6 +314,18 @@
                 "HL-8684": "55 8B EC 51 A1 ?? ?? ?? ?? 53 56 57 83 B8 F8 02 00 00 01 75 63 E8 ?? ?? ?? ?? 68 03 03 00 00 68 02 03 00 00"
             }
         },
+        "SV_ExecuteClientMessage": {
+            "#": "Search for \"SV_ReadClientMessage: badread\"",
+            "dlls": [
+                "hw"
+            ],
+            "names": {
+                "Linux": "SV_ExecuteClientMessage"
+            },
+            "patterns": {
+                "HL-8684": "55 8B EC 8B 0D ?? ?? ?? ?? 56 8B 75 08 C7 05 ?? ?? ?? ?? 00 00 00 00 DD 05 ?? ?? ?? ?? 8B 46 5C"
+            }
+        },
         "ScreenTransform": {
             "#": "",
             "dlls": [
