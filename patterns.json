@@ -337,6 +337,18 @@
                 "HL-8684": "55 8B EC 51 8B 45 08 8B 4D 0C D9 05 ?? ?? ?? ?? D8 08 D9 05 ?? ?? ?? ?? D8 48 08 DE C1"
             }
         },
+        "SzFromIndex": {
+            "#": "Search for \"Bad entity in IndexOfEdict\" to find IndexOfEdict, then find the cross reference from a function table. Move 5 entries up in the table to find SzFromIndex.",
+            "dlls": [
+                "hw"
+            ],
+            "names": {
+                "Linux": "SzFromIndex"
+            },
+            "patterns": {
+                "HL-8684": "55 8B EC 8B 45 08 8B 0D ?? ?? ?? ?? 03 C1 5D C3 55 8B EC 8B 45 08 05"
+            }
+        },
         "VGUI2_Draw_SetTextColorAlpha": {
             "#": "",
             "dlls": [

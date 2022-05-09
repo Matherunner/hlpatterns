@@ -51,6 +51,7 @@
                 "R_DrawSequentialPoly",
                 "ScreenTransform",
                 "SV_ExecuteClientMessage",
+                "SzFromIndex",
                 "tri_GL_Begin",
                 "tri_GL_Color4f",
                 "tri_GL_CullFace",
