@@ -10,6 +10,7 @@
                 "CSCZDS",
                 "Gunman",
                 "HL-4554",
+                "HL-8183",
                 "HL-8684",
                 "HL-NGHL",
                 "HL-WON",
@@ -25,7 +26,9 @@
                 "CBaseMonster::ChangeSchedule",
                 "CBaseMonster::PBestSound",
                 "CBaseMonster::RouteNew",
+                "Cbuf_InsertText",
                 "CGraph::InitGraph",
+                "CL_CreateMove",
                 "Cmd_AddCommandWithFlags",
                 "Cmd_Argv",
                 "CSoundEnt::ActiveList",
@@ -47,6 +50,8 @@
                 "R_Clear",
                 "R_DrawSequentialPoly",
                 "ScreenTransform",
+                "SV_ExecuteClientMessage",
+                "SzFromIndex",
                 "tri_GL_Begin",
                 "tri_GL_Color4f",
                 "tri_GL_CullFace",
@@ -56,7 +61,8 @@
                 "V_FadeAlpha",
                 "VGUI2_Draw_SetTextColorAlpha",
                 "WorldGraph",
-                "WorldTransform"
+                "WorldTransform",
+                "WriteDest_Parm"
             ]
         },
         "nameKeys": {
